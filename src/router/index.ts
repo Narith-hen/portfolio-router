@@ -14,16 +14,25 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomePage,
+    props: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    },
   },
   {
     path: '/about',
     name: 'about',
     component: AboutPage,
+    props: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    },
   },
   {
     path: '/project',
     name: 'projects',
     component: ProjectPage,
+    props: {
+      text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    },
   },
 ]
 

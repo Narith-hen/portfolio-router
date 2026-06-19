@@ -30,13 +30,18 @@
     <h1 class="font-bold text-4xl p-12 text-orange-900">Welcome to About Page</h1>
 
     <p class="max-w-2xl px-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam a recusandae maiores fuga
-      explicabo aliquid soluta obcaecati, nobis aperiam, dolorem dolore. Itaque error voluptatem
-      pariatur obcaecati alias incidunt, ut aliquam?
+      {{ text }}
     </p>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  text: {
+    type: String,
+    required: true
+  }
+})
+</script>
 
 <style lang="scss" scoped></style>
